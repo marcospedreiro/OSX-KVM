@@ -27,11 +27,11 @@ qemu-system-x86_64 -enable-kvm -m 3072 -cpu Penryn,kvm=off,vendor=GenuineIntel \
 	  -smbios type=2 \
 	  -device ich9-intel-hda -device hda-duplex \
 	  -device ide-drive,bus=ide.2,drive=MacHDD \
-	  -drive id=MacHDD,if=none,file=./mac_hdd.img \
+	  -drive id=MacHDD,if=none,file='seagate/yosemite/mac_hdd.img' \
 	  -netdev tap,id=net0,ifname=tap0,script=no,downscript=no -device e1000-82545em,netdev=net0,id=net0,mac=52:54:00:c9:18:27 \
 	  -monitor stdio \
 	  -device ide-drive,bus=ide.0,drive=MacDVD \
-	  -drive id=MacDVD,if=none,snapshot=on,file=./'Install_macOS_10.12.6_Sierra.iso'
+	  -drive id=MacDVD,if=none,snapshot=on,file='/seagate/yosemite/osx_yosemite.iso'
 	  # -vnc 0.0.0.0:0 -k en-us \
 	  # -redir tcp:5901::5900 \
 	  # -netdev user,id=hub0port0 -device e1000-82545em,netdev=hub0port0,id=mac_vnet0 \
