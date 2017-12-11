@@ -6,3 +6,7 @@ RUN apt-get update && \
 
 # virt-manager
 # https://hub.docker.com/r/mainto/kvm-mac/
+# https://sebgoa.blogspot.com/2015/05/running-vms-in-docker-containers-via.html
+# https://github.com/rancher/vm
+# https://github.com/BBVA/kvm
+# 

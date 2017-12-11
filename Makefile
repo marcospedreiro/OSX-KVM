@@ -10,5 +10,6 @@ build:
 .PHONY: run
 run:
 	docker run -it -v `pwd`:/osx-kvm \
-	-v /Volumes/Seagate/resources/os/macOS/yosemite:/seagate/yosemite \
 	mvpedreiro/ubuntu1610-qemu:$(BOOTSTRAP_DOCKER_IMAGE_VERSION) bash
+	#-v /Volumes/Seagate/resources/os/macOS/yosemite:/seagate/yosemite \
+	#mvpedreiro/ubuntu1610-qemu:$(BOOTSTRAP_DOCKER_IMAGE_VERSION) bash
