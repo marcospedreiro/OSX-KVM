@@ -1,4 +1,5 @@
 *.iso
+!Clover-v2.4k-4330-X64.iso
 pbzx-src/liblzma
 pbzx-src/xz-5.2.2
 pbzx-src/pbzx
